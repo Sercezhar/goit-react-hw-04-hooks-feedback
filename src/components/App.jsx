@@ -14,13 +14,13 @@ export function App() {
   const totalFeedback = goodFeedback + neutralFeedback + badFeedback;
 
   function leaveFeedback(type) {
-    if (type === 'goodFeedback') {
+    if (type === 'good') {
       setGoodFeedback(prevState => prevState + 1);
     }
-    if (type === 'neutralFeedback') {
+    if (type === 'neutral') {
       setNeutralFeedback(prevState => prevState + 1);
     }
-    if (type === 'badFeedback') {
+    if (type === 'bad') {
       setBadFeedback(prevState => prevState + 1);
     }
   }
